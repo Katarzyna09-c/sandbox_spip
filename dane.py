@@ -5,9 +5,8 @@ users_list = [
                    {"name":"Kamil" , "nick":"Koc","posts":123},
                    {"name":"Marek" , "nick":"Wisse","posts":5343},
                    {"name":"Agata" , "nick":"Drzygało","posts":333},
-                   {"name":"Monika" , "nick":"Szczepaniuk","posts":4342}]
+                   {"name":"Monika" , "nick":"Szczepaniuk","posts":4342},
+                   {"name":"Kinga" , "nick":"Kinia","posts":42}]
 
-#print(f'Twój znajomy {zmienna_na_dane[0]["nick"]} opublikował {zmienna_na_dane[0]["posts"]}  !')
-#print(f'Twój znajomy {zmienna_na_dane[1]["nick"]} opublikował {zmienna_na_dane[1]["posts"]}  !')
-#print(f'Twój znajomy {zmienna_na_dane[2]["nick"]} opublikował {zmienna_na_dane[2]["posts"]}  !')
-#print(f'Twój znajomy {zmienna_na_dane[3]["nick"]} opublikował {zmienna_na_dane[3]["posts"]}  !')
+
+
