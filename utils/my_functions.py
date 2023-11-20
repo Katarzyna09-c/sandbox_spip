@@ -45,7 +45,7 @@ def gui(users_list) -> None:
               f'1: Wyswietl uzytkownikow \n'
               f'2: Podaj uzytkownika \n'
               f'3: Usun uzytkownika \n'
-              f'4: Modyfiikuj uzytkonika '
+              f'4: Modyfiikuj uzytkonika'
               )
 
         menu_option = input('Podaj funkcje do wywołania')
@@ -66,4 +66,16 @@ def gui(users_list) -> None:
                 remove_user_from(users_list)
             case '4':
                 print('Modyfikuje uzytkownika')
-                print('to bedzie zrobione')  # TODO add this function to my functions
+                update_users(users_list)
+
+
+
+def update_users(users_list: list[dict, dict]) -> None:
+    nick_of_users = input('podaj nick uzytkownika do modyfikacj')
+    print(nick_of_users)
+    for users in users_list:
+        if users['nick'] == nick_of_users:
+            print('Znaleziono!!!')
+            users['name'] = input('podaj nowe imie')
+            users['nick'] = input('podaj nowa ksywe!!')
+            users['posts'] = int(input('podaj liczbe postow: '))
