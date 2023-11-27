@@ -1,12 +1,12 @@
 users_list = [
-                   {"name":"Kasia" , "nick":"katarzyna","posts":1},
-                   {"name":"Mateusz" , "nick":"świetlik","posts":60},
-                   {"name":"Bartosz" , "nick":"Baran","posts":31231},
-                   {"name":"Kamil" , "nick":"Koc","posts":123},
-                   {"name":"Marek" , "nick":"Wisse","posts":5343},
-                   {"name":"Agata" , "nick":"Drzygało","posts":333},
-                   {"name":"Monika" , "nick":"Szczepaniuk","posts":4342},
-                   {"name":"Kinga" , "nick":"Kinia","posts":42},
-                   {"name":"Marek" , "nick":"mmm","posts":22}]
+                   {"city":'Zamość',"name":"Kasia" , "nick":"katarzyna","posts":1},
+                   {"city":'Lublin',"name":"Mateusz" , "nick":"świetlik","posts":60},
+                   {"city":'Opoczno',"name":"Bartosz" , "nick":"Baran","posts":31231},
+                   {"city":'Licheń',"name":"Kamil" , "nick":"Koc","posts":123},
+                   {"city":'Brodnica',"name":"Marek" , "nick":"Wisse","posts":5343},
+                   {"city":'Kuryłówka',"name":"Agata" , "nick":"Drzygało","posts":333},
+                   {"city":'Warszawa',"name":"Monika" , "nick":"Szczepaniuk","posts":4342},
+                   {"city":'Kraków',"name":"Kinga" , "nick":"Kinia","posts":42},
+                   {"city":'Szczecin',"name":"Marek" , "nick":"mmm","posts":22}]
 
 
