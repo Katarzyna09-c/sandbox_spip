@@ -1,12 +1,13 @@
-users_list = [
-                   {"city":'Zamość',"name":"Kasia" , "nick":"katarzyna","posts":1},
-                   {"city":'Lublin',"name":"Mateusz" , "nick":"świetlik","posts":60},
-                   {"city":'Opoczno',"name":"Bartosz" , "nick":"Baran","posts":31231},
-                   {"city":'Licheń',"name":"Kamil" , "nick":"Koc","posts":123},
-                   {"city":'Brodnica',"name":"Marek" , "nick":"Wisse","posts":5343},
-                   {"city":'Kuryłówka',"name":"Agata" , "nick":"Drzygało","posts":333},
-                   {"city":'Warszawa',"name":"Monika" , "nick":"Szczepaniuk","posts":4342},
-                   {"city":'Kraków',"name":"Kinga" , "nick":"Kinia","posts":42},
-                   {"city":'Szczecin',"name":"Marek" , "nick":"mmm","posts":22}]
-
+users_list: list = [
+    {"city": 'Zamość', "name": "Marek", "nick": "mmm", "posts": 100},
+    {"city": 'Lublin', "name": "Mateusz", "nick": "Św", "posts": 60},
+    {"city": 'Opoczno', "name": "Bartosz", "nick": "Bar", "posts": 31231},
+    {"city": 'Licheń_Stary', "name": "Tomasz", "nick": "ko", "posts": 123},
+    {"city": 'Brodnica', "name": "Marek", "nick": "wis", "posts": 0},
+    {"city": 'Kuryłówka', "name": "Wiktoria", "nick": "wi", "posts": 360},
+    {"city": 'Warszawa', "name": "Wiktoria", "nick": "wiki", "posts": 123},
+    {"city": 'Mińsk_Mazowiecki', "name": "Monika", "nick": "Mo", "posts": 1_000_000},
+    {"city": 'Koszalin', "name": "Kasia", "nick": "Kkk", "posts": 1_500},
+    {"city": 'Hrubieszów', "name": "Agata", "nick": "AAA", "posts": 1_0_000},
+]
 
