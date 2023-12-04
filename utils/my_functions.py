@@ -146,3 +146,8 @@ def gui(users_list: list) -> None:
             case '6':
                 print('Rysyję mapę z wszystkimi użytkownikami')
                 get_map_of(users_list)
+
+
+def pogoda_z(miato: str):
+    url = f'https://danepubliczne.imgw.pl/api/data/synop/station/{miasto}'
+    return requests.get(url).json()
