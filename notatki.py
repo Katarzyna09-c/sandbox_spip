@@ -21,7 +21,7 @@ connection = engine.connect()
 #sql_query_1= sqlalchemy.text (f"UPDATE public.my_table SET name={'na_kogo'} WHERE name={'kogo_zamienic'};")
 
 def dodaj_uzytkownika(user:str):
-    sql_query_1 = sqlalchemy.text("INSERT INTO public.my_table( name) VALUES('{user}');")
+    sql_query_1 = sqlalchemy.text(f"INSERT INTO public.my_table(name) VALUES('{user}');")
     connection.execute(sql_query_1)
     connection.commit()
 #cwok = 'stasiu'
@@ -34,7 +34,7 @@ def usun_uzytkownika(user:str):
 
 
 def aktualizuj_uzytkownika(user_1:str,user_2:str):
-    sql_query_1 = sqlalchemy.text(f"UPDATE public.my_table SET name={'na_kogo'} WHERE name={'kogo_zamienic'};")
+    sql_query_1 = sqlalchemy.text(f"UPDATE public.my_table SET name='{user_1}' WHERE name='{user_2}';")
     connection.execute(sql_query_1)
     connection.commit()
 aktualizuj_uzytkownika(
