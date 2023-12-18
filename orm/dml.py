@@ -1,11 +1,11 @@
 import random
+
 import sqlalchemy
+from dotenv import load_dotenv
 import os
 import sqlalchemy.orm
-from dotenv import load_dotenv
 from geoalchemy2 import Geometry
 from faker import Faker
-from .dml import User
 
 load_dotenv()
 
@@ -38,9 +38,9 @@ Base.metadata.create_all(engine)
 
 
 
-session.flush()
+#session.flush()
 connection.close()
 engine.dispose()
-def main ()
-if __name__ == __main__:
-    main()
+#def main ()
+#if __name__ == __main__:
+   # main()
