@@ -1,88 +1,51 @@
-import random
-import sqlalchemy
-import os
-import sqlalchemy.orm
-from dotenv import load_dotenv
-from geoalchemy2 import Geometry
-from faker import Faker
-
-load_dotenv()
-
-# Tworze plik o nazwie .env
-db_params = sqlalchemy.URL.create(
-    drivername='postgresql+psycopg2',
-    username=os.getenv("POSTGRES_USER"),
-    password=os.getenv("POSTGRES_PASSWORD"),
-    host=os.getenv("POSTGRES_HOST"),
-    database=os.getenv("POSTGRES_DB"),
-    port=os.getenv("POSTGRES_PORT"),
-)
-
-engine = sqlalchemy.create_engine(db_params)
-connection = engine.connect()
-
-Base = sqlalchemy.orm.declarative_base()
-
-
-class User(Base):
-    __tablename__ = 'aaaaa'
-
-    id = sqlalchemy.Column(sqlalchemy.Integer(), primary_key=True)  # serial
-    name = sqlalchemy.Column(sqlalchemy.String(100), nullable=True)
-    location = sqlalchemy.Column('geom', Geometry(geometry_type='POINT', srid=4326, nullable=True))
-
-
-Base.metadata.create_all(engine)
-
-### Create
-
-Session = sqlalchemy.orm.sessionmaker(bind=engine)
-session = Session()
-
-lista_userow: list = []
-fake = Faker()
-
-
-
-for item in range(10_000):
-    lista_userow.append(
-        User(
-            name=fake.name(),
-            location=f'POINT({random.uniform(14,24)} {random.uniform(49,55)})'
-        ))
-
-
-
-#session.add_all(lista_userow)
-#session.commit()
-
-## Read / Select
-#print(users_from_db)
-
-
-users_from_db = session.query(User).all()
-for user in users_from_db:
-    if user.name =='Mariah Carey':
-        user.query.filter_by(name='Mariah Carey')
-
-    print(user.name)
-
-session.commit()
-
-    #print(user.name)
-
-
-
-
-
-
- #   print(user.name)
-
-#user_from_db = session.query(User).filter(User.name=='Janek')
-
-
-
-
-session.flush()
-connection.close()
-engine.dispose()
+# import psycopg2 as ps
+# from dane import users_list
+#
+# db_params = ps.connect(
+#     database='postgres',
+#     user='postgres',
+#     password='psip2023',
+#     host='localhost',
+#     port=5432
+# )
+# 
+# cursor=db_params.cursor()
+#
+#
+#
+# #engine = sqlalchemy.create_engine(db_params)
+# #connection = engine.connect()
+# #sql_query_1 = sqlalchemy.text ("INSERT INTO public.my_table( name) VALUES('kepa');")
+# #sql_query_1= sqlalchemy.text ("select * from public.my_table;")
+# #user = input('podaj nazwe zawodnika do usuniecia')
+# #sql_query_1= sqlalchemy.text (f"DELETE FROM public.my_table WHERE name='{user}';")
+# #kogo_zamienic = input('podaj kogo zmienic')
+# #na_kogo = input('podaj na kogo zamienic')
+# #sql_query_1= sqlalchemy.text (f"UPDATE public.my_table SET name={'na_kogo'} WHERE name={'kogo_zamienic'};")
+#
+# def dodaj_uzytkownika(user:str):
+#     for nick in users_list:
+#         if user == nick['nick']:
+#             sql_query_1 = f"INSERT INTO public.lab(city, name, nick, posts) VALUES ('{nick['city']}', '{nick['name']}', '{nick['nick']}', '{nick['posts']}');"
+#             cursor.execute(sql_query_1)
+#             db_params.commit()
+#
+# dodaj_uzytkownika(input('dodaj teraz'))
+#
+# #def usun_uzytkownika(user:str):
+#  #   sql_query_1 = sqlalchemy.text(f"DELETE FROM public.my_table WHERE name='{user}';")
+#   #  connection.execute(sql_query_1)
+#    # connection.commit()
+#
+#
+# #def aktualizuj_uzytkownika(user_1:str,user_2:str):
+#  #   sql_query_1 = sqlalchemy.text(f"UPDATE public.my_table SET name='{user_1}' WHERE name='{user_2}';")
+#   #  connection.execute(sql_query_1)
+#    # connection.commit()
+# #aktualizuj_uzytkownika(
+#  #   user_1=input('na kogo zamienic'),
+#   #  user_2= input('kogo zamienic'))
+#
+#
+# #connection.execute(sql_query_1)
+# #connection.commit()
