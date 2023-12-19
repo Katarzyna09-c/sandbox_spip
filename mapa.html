@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fbcf5b4e91948004ebf8040728c6c52f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fbcf5b4e91948004ebf8040728c6c52f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fbcf5b4e91948004ebf8040728c6c52f = L.map(
+                "map_fbcf5b4e91948004ebf8040728c6c52f",
+                {
+                    center: [52.3, 21.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_50eb410e56b4460f9afb8ba834d0851a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_50eb410e56b4460f9afb8ba834d0851a.addTo(map_fbcf5b4e91948004ebf8040728c6c52f);
+    
+            var marker_cc3c449c3db63cd0625ab8ea18560d47 = L.marker(
+                [50.720556, 23.258611],
+                {}
+            ).addTo(map_fbcf5b4e91948004ebf8040728c6c52f);
+        
+    
+        var popup_082e4478b971691f55c60faa5f258343 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82f39f7edc9b13b9a7a641625625949f = $(`<div id="html_82f39f7edc9b13b9a7a641625625949f" style="width: 100.0%; height: 100.0%;">Użytkownik: Marek Liczba postow: 100</div>`)[0];
+                popup_082e4478b971691f55c60faa5f258343.setContent(html_82f39f7edc9b13b9a7a641625625949f);
+            
+        
+
+        marker_cc3c449c3db63cd0625ab8ea18560d47.bindPopup(popup_082e4478b971691f55c60faa5f258343)
+        ;
+
+        
+    
+    
+            var marker_cb8d6cd3b021b21da5cf493ca28684fd = L.marker(
+                [52.323333, 18.36],
+                {}
+            ).addTo(map_fbcf5b4e91948004ebf8040728c6c52f);
+        
+    
+        var popup_28af434ccecdadee2b6de789cbfe0f23 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a78b0ee82ec4b2d8fc0b652763fd410 = $(`<div id="html_5a78b0ee82ec4b2d8fc0b652763fd410" style="width: 100.0%; height: 100.0%;">Użytkownik: Tomasz Liczba postow: 123</div>`)[0];
+                popup_28af434ccecdadee2b6de789cbfe0f23.setContent(html_5a78b0ee82ec4b2d8fc0b652763fd410);
+            
+        
+
+        marker_cb8d6cd3b021b21da5cf493ca28684fd.bindPopup(popup_28af434ccecdadee2b6de789cbfe0f23)
+        ;
+
+        
+    
+    
+            var marker_ad531a09b8b0a4502f914c5404df1845 = L.marker(
+                [53.259722, 19.395556],
+                {}
+            ).addTo(map_fbcf5b4e91948004ebf8040728c6c52f);
+        
+    
+        var popup_c838181e7ce1839d0680eb4129bb2a00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87ec94d6bfc57bee7f2356ace251a8b4 = $(`<div id="html_87ec94d6bfc57bee7f2356ace251a8b4" style="width: 100.0%; height: 100.0%;">Użytkownik: Marek Liczba postow: 0</div>`)[0];
+                popup_c838181e7ce1839d0680eb4129bb2a00.setContent(html_87ec94d6bfc57bee7f2356ace251a8b4);
+            
+        
+
+        marker_ad531a09b8b0a4502f914c5404df1845.bindPopup(popup_c838181e7ce1839d0680eb4129bb2a00)
+        ;
+
+        
+    
+    
+            var marker_107d617f698386e0f763dd990c4521f5 = L.marker(
+                [50.297222, 22.464722],
+                {}
+            ).addTo(map_fbcf5b4e91948004ebf8040728c6c52f);
+        
+    
+        var popup_d002932a00ee33ef0c8759fc731e8974 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d6ceea9b7d7e46583aabd2d0ea4cb3a = $(`<div id="html_1d6ceea9b7d7e46583aabd2d0ea4cb3a" style="width: 100.0%; height: 100.0%;">Użytkownik: Wiktoria Liczba postow: 360</div>`)[0];
+                popup_d002932a00ee33ef0c8759fc731e8974.setContent(html_1d6ceea9b7d7e46583aabd2d0ea4cb3a);
+            
+        
+
+        marker_107d617f698386e0f763dd990c4521f5.bindPopup(popup_d002932a00ee33ef0c8759fc731e8974)
+        ;
+
+        
+    
+    
+            var marker_3babf28c662c088fdf2450526561d3aa = L.marker(
+                [52.232222, 21.008333],
+                {}
+            ).addTo(map_fbcf5b4e91948004ebf8040728c6c52f);
+        
+    
+        var popup_f38a63cd2ddab8f2026b2b3702d55127 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d11fd7f04f8ed6c8857c24ae613f0005 = $(`<div id="html_d11fd7f04f8ed6c8857c24ae613f0005" style="width: 100.0%; height: 100.0%;">Użytkownik: Wiktoria Liczba postow: 123</div>`)[0];
+                popup_f38a63cd2ddab8f2026b2b3702d55127.setContent(html_d11fd7f04f8ed6c8857c24ae613f0005);
+            
+        
+
+        marker_3babf28c662c088fdf2450526561d3aa.bindPopup(popup_f38a63cd2ddab8f2026b2b3702d55127)
+        ;
+
+        
+    
+    
+            var marker_f7f0e36aff39873fdf533bcb2ed7b559 = L.marker(
+                [52.180556, 21.558333],
+                {}
+            ).addTo(map_fbcf5b4e91948004ebf8040728c6c52f);
+        
+    
+        var popup_fc3b272a902c7b908ef70fd17c66a240 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67a0e9e5e6d7057c1856be8b0ba6e937 = $(`<div id="html_67a0e9e5e6d7057c1856be8b0ba6e937" style="width: 100.0%; height: 100.0%;">Użytkownik: Monika Liczba postow: 1000000</div>`)[0];
+                popup_fc3b272a902c7b908ef70fd17c66a240.setContent(html_67a0e9e5e6d7057c1856be8b0ba6e937);
+            
+        
+
+        marker_f7f0e36aff39873fdf533bcb2ed7b559.bindPopup(popup_fc3b272a902c7b908ef70fd17c66a240)
+        ;
+
+        
+    
+    
+            var marker_7fbb1779a59c05de343dc8e17e54a63d = L.marker(
+                [54.190278, 16.181667],
+                {}
+            ).addTo(map_fbcf5b4e91948004ebf8040728c6c52f);
+        
+    
+        var popup_de4595c13db65a2fa8649c084bab0c6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_603083648edc8320b62ec6e29bebd846 = $(`<div id="html_603083648edc8320b62ec6e29bebd846" style="width: 100.0%; height: 100.0%;">Użytkownik: Kasia Liczba postow: 1500</div>`)[0];
+                popup_de4595c13db65a2fa8649c084bab0c6b.setContent(html_603083648edc8320b62ec6e29bebd846);
+            
+        
+
+        marker_7fbb1779a59c05de343dc8e17e54a63d.bindPopup(popup_de4595c13db65a2fa8649c084bab0c6b)
+        ;
+
+        
+    
+    
+            var marker_344e726cf90b10837aed8872eb444849 = L.marker(
+                [50.8025, 23.891944],
+                {}
+            ).addTo(map_fbcf5b4e91948004ebf8040728c6c52f);
+        
+    
+        var popup_ec61a90f745a38cea0e761e1372d7141 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4baff0ad02589e9a72516b00db0a45ca = $(`<div id="html_4baff0ad02589e9a72516b00db0a45ca" style="width: 100.0%; height: 100.0%;">Użytkownik: Agata Liczba postow: 10000</div>`)[0];
+                popup_ec61a90f745a38cea0e761e1372d7141.setContent(html_4baff0ad02589e9a72516b00db0a45ca);
+            
+        
+
+        marker_344e726cf90b10837aed8872eb444849.bindPopup(popup_ec61a90f745a38cea0e761e1372d7141)
+        ;
+
+        
+    
+    
+            var marker_8789405f86dda12946a897c8ec65fcd2 = L.marker(
+                [51.25, 22.566667],
+                {}
+            ).addTo(map_fbcf5b4e91948004ebf8040728c6c52f);
+        
+    
+        var popup_61a0ae29932be3b8fbc617348a62de2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ecf505bb8c445fb6aa137b4e06998aea = $(`<div id="html_ecf505bb8c445fb6aa137b4e06998aea" style="width: 100.0%; height: 100.0%;">Użytkownik: Bartek Liczba postow: 8484</div>`)[0];
+                popup_61a0ae29932be3b8fbc617348a62de2a.setContent(html_ecf505bb8c445fb6aa137b4e06998aea);
+            
+        
+
+        marker_8789405f86dda12946a897c8ec65fcd2.bindPopup(popup_61a0ae29932be3b8fbc617348a62de2a)
+        ;
+
+        
+    
+    
+            var marker_82b15c2a49fdece9abf2afe810c9030b = L.marker(
+                [51.403611, 21.156667],
+                {}
+            ).addTo(map_fbcf5b4e91948004ebf8040728c6c52f);
+        
+    
+        var popup_4fd43cd19b498d3097572e0e707cb1a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b110e731daa4e69db1c654d6bae21c1 = $(`<div id="html_2b110e731daa4e69db1c654d6bae21c1" style="width: 100.0%; height: 100.0%;">Użytkownik: Mateusz Liczba postow: 60</div>`)[0];
+                popup_4fd43cd19b498d3097572e0e707cb1a4.setContent(html_2b110e731daa4e69db1c654d6bae21c1);
+            
+        
+
+        marker_82b15c2a49fdece9abf2afe810c9030b.bindPopup(popup_4fd43cd19b498d3097572e0e707cb1a4)
+        ;
+
+        
+    
+</script>
+</html>

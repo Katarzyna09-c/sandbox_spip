@@ -31,7 +31,6 @@ def add_user_to() -> None:
     posts = input('podaj liczbe postow ?')
     city = input('podaj miasto ?')
     nick = input('podaj nick ?')
-    name = input('podaj name ?')
     sql_query_1 = f"INSERT INTO public.lab(city, name, nick, posts) VALUES ('{city}', '{name}', '{nick}', '{posts}');"
     cursor.execute(sql_query_1)
     db_params.commit()
@@ -71,7 +70,7 @@ def show_users_from() -> None:
         print(f'Twoj znajomy {row[2]} opublikowal {row[4]} postow')
 
 
-def update_user(users_list: list[dict, dict]) -> None:
+def update_user() -> None:
     nick_of_user = input('podaj nick użytkownika do modyfikacji')
     sql_query_1 = f"SELECT * FROM public.lab WHERE nick='{nick_of_user}';"
     cursor.execute(sql_query_1)
@@ -195,8 +194,8 @@ class User:
         URL = f'https://danepubliczne.imgw.pl/api/data/synop/station/{miasto}'
         return rq.get(URL).json()
 
-npc_1=User(city='Koszalin', name='Bartosz', nick='Bbb', posts=3131)
-npc_2=User(city='Brodnica', name='Mateusz', nick='mmm', posts=62)
+npc_1=User(city='warszawa', name='Bartosz', nick='Bbb', posts=3131)
+npc_2=User(city='poznan', name='Mateusz', nick='mmm', posts=62)
 print(npc_1.city)
 print(npc_2.city)
 
