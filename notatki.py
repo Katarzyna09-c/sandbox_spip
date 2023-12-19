@@ -8,7 +8,11 @@
 #     host='localhost',
 #     port=5432
 # )
+#<<<<<<< Updated upstream
 # 
+#=======
+#
+#>>>>>>> Stashed changes
 # cursor=db_params.cursor()
 #
 #
